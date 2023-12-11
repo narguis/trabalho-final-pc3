@@ -1,0 +1,1 @@
+Criei a aplicação Angular, o CRUD (o mesmo do trabalho 2) e o banco de dados separadamente, mas, mesmo depois de várias horas tentando, não consegui integrá-los apropriadamente juntos de maneira que funcionassem, experimentei muito, fiz muitas pesquisas, mas creio que há algo de errado com meus componentes.
