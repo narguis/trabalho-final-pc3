@@ -1,0 +1,9 @@
+<form (ngSubmit)="salvarMarca()">
+    <label for="sigla">Sigla:</label>
+    <input type="text" id="sigla" [(ngModel)]="marca.sigla" name="sigla" required>
+  
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" [(ngModel)]="marca.descricao" name="descricao" required>
+  
+    <button type="submit">Salvar</button>
+  </form>

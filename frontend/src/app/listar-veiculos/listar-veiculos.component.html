@@ -1,0 +1,7 @@
+<h2>Listar Veículos</h2>
+
+<ul>
+  <li *ngFor="let veiculo of veiculos">
+    {{ veiculo.placa }} - {{ veiculo.cor }} - {{ veiculo.anoModelo }} - {{ veiculo.marca.descricao }}
+  </li>
+</ul>

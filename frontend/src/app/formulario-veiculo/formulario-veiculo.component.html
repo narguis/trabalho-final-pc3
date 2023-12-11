@@ -1,0 +1,25 @@
+<form (ngSubmit)="salvarVeiculo()">
+    <div class="form-group">
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" [(ngModel)]="veiculo.placa" name="placa" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" [(ngModel)]="veiculo.cor" name="cor" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="anoModelo">Ano Modelo:</label>
+      <input type="number" id="anoModelo" [(ngModel)]="veiculo.anoModelo" name="anoModelo" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <select id="marca" [(ngModel)]="veiculo.marca" name="marca" required>
+        <option *ngFor="let marca of listaMarcas" [value]="marca.id">{{ marca.descricao }}</option>
+      </select>
+    </div>
+  
+    <button type="submit">Salvar</button>
+  </form>
